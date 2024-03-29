@@ -22,7 +22,7 @@ LINKS_EMOJIS = {
 
 TOPICS_EMOJIS = {
     "Agents": ":robot:",
-    "Benchmarks & Environments": ":jigsaw:",
+    "Benchmarks & Environments": ":world_map:",
     "Tool Usage": ":wrench:",
     "Reasoning & Planning": ":thinking:",
     "Other": ":bookmark:",

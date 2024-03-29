@@ -1,5 +1,5 @@
 # Papers we read over March 18 - March 24
-## :jigsaw: Benchmarks & Environments
+## :world_map: Benchmarks & Environments
 | :scroll: Paper                                                                                                                                 | :link: Resources                                                                                                                                          |
 |:-----------------------------------------------------------------------------------------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [m&m's: A Benchmark to Evaluate Tool-Use for multi-step multi-modal Tasks](https://arxiv.org/abs/2403.11085)                                   | [code](https://arxiv.org/abs/2403.11085), [dataset](https://huggingface.co/datasets/zixianma/mnms)                                                        |
