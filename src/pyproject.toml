@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "ai-agents-papers"
+version = "0.1.0"
+description = "Reading & sharing papers on AI Agents every week."
+authors = []
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "~3.10"
+pandas = "^2.2.1"
+tabulate = "^0.9.0"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.3.0"
+isort = "^5.13.2"
+mypy = "^1.9.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 120
+target-version = ["py310"]
+
+[tool.isort]
+line_length = 120
+py_version = 310
+profile = "black"
+
+[tool.mypy]
+python_version = "3.10"
+
+[[tool.mypy.overrides]]
+module = []
+ignore_missing_imports = true
