@@ -55,12 +55,17 @@ def convert_to_markdown_table(df: pd.DataFrame) -> str:
         return resources
 
     def _get_paper(df_row: Dict[str, Any]) -> str:
-        return (
-            "["
-            + df_row["title"].replace("\n", " ")
-            + f"]({df_row['link_main']})"
-            + (f" ({df_row['notes']})" if df_row["notes"] else "")
-        )
+        paper_title = df_row["title"].replace("\n", " ")
+        notes = f" ({df_row['notes']})" if df_row["notes"] else ""
+
+        if df_row["reviews"]:
+            title = (
+                f"<a href='{df_row['link_main']}'>{paper_title}</a>{notes} – click to unveil highlight by TODO :mag:"
+            )
+            review = df_row["reviews"].replace("\n", "<br>")
+            return f"<details><summary>{title}</summary>{review}</details>"
+
+        return f"[{paper_title}]({df_row['link_main']}){notes}"
 
     new_df = pd.DataFrame(
         {
