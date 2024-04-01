@@ -60,7 +60,6 @@ def convert_to_markdown_table(df: pd.DataFrame) -> str:
             + df_row["title"].replace("\n", " ")
             + f"]({df_row['link_main']})"
             + (f" ({df_row['notes']})" if df_row["notes"] else "")
-            + (f" – {df_row['reviews']}" if df_row["reviews"] else "")
         )
 
     new_df = pd.DataFrame(
