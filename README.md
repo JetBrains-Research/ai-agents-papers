@@ -5,3 +5,4 @@ A weekly selection of papers from AI Agents & Planning research group at JetBrai
 ## :date: Our Weekly Digests
 
 * [March 18 - March 24](digests/digest_18.03.2024-24.03.2024.md)
+* [March 25 - March 31](digests/digest_25.03.2024-31.03.2024.md)
