@@ -59,9 +59,7 @@ def convert_to_markdown_table(df: pd.DataFrame) -> str:
         notes = f" ({df_row['notes']})" if df_row["notes"] else ""
 
         if df_row["reviews"]:
-            title = (
-                f"<a href='{df_row['link_main']}'>{paper_title}</a>{notes} – click to unveil highlight by TODO :mag:"
-            )
+            title = f"<a href='{df_row['link_main']}'>{paper_title}</a>{notes} – <i>click to unveil overview by TODO</i> :mag:"
             review = df_row["reviews"].replace("\n", "<br>")
             return f"<details><summary>{title}</summary>{review}</details>"
 
