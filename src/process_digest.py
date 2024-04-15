@@ -5,6 +5,7 @@ from argparse import ArgumentParser
 from datetime import datetime
 from typing import Any, Dict, List, Optional, Tuple
 
+import markdown
 import numpy as np
 import pandas as pd
 
@@ -60,7 +61,7 @@ def convert_to_markdown_table(df: pd.DataFrame) -> str:
 
         if df_row["reviews"]:
             title = f"<a href='{df_row['link_main']}'>{paper_title}</a>{notes} – <i>click to unveil overview by TODO</i> :mag:"
-            review = df_row["reviews"].replace("\n", "<br>")
+            review = markdown.markdown(df_row["reviews"]).replace("\n", "<br>")
             return f"<details><summary>{title}</summary>{review}</details>"
 
         return f"[{paper_title}]({df_row['link_main']}){notes}"

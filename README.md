@@ -33,5 +33,7 @@ TODO
 
 You can find our weekly selections of the research papers related to AI Agents & Planning below:
 
+* [April 8 - April 14](digests/digest_08.04.2024-14.04.2024.md)
+* [April 1 - April 7](digests/digest_01.04.2024-07.04.2024.md)
 * [March 25 - March 31](digests/digest_25.03.2024-31.03.2024.md)
 * [March 18 - March 24](digests/digest_18.03.2024-24.03.2024.md)
